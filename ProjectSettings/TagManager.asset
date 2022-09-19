@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Player_bullet
+  - Explosion
+  - Enemy_bullet
+  - GameOverScreen
+  - Enemy1
+  - Enemy2
+  - Enemy3
+  - heart
+  - charge
+  - laser_bullet
+  - buff
+  - shield
+  - Freeze_bullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - background
+  - player
+  - enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - ui
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 3994210995
+    locked: 0
+  - name: player
+    uniqueID: 711762927
+    locked: 0
+  - name: enemy
+    uniqueID: 706019649
+    locked: 0
+  - name: effects
+    uniqueID: 3820858741
+    locked: 0
+  - name: ui
+    uniqueID: 3357773995
+    locked: 0
