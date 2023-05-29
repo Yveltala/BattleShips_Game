@@ -49,57 +49,7 @@ public class addscore : MonoBehaviour
         pn = name.text.ToString();
         sc = float.Parse(score.text);
         pn=pn.ToUpper();
-        if (
-            pn == "FCK"
-            || pn == "DCK"
-            || pn == "ASS"
-            || pn == "KKK"
-            || pn == "LSD"
-            || pn == "JEW"
-            || pn == "COK"
-            || pn == "DIK"
-            || pn == "CNT"
-            || pn == "SHT"
-            || pn == "FUC"
-            || pn == "FUK"
-            || pn == "DIQ"
-            || pn == "DIX"
-            || pn == "FAG"
-            || pn == "NIG"
-            || pn == "NGR"
-            || pn == "BCH"
-            || pn == "CUM"
-            || pn == "CLT"
-            || pn == "KUM"
-            || pn == "SUC"
-            || pn == "SUK"
-            || pn == "GAY"
-            || pn == "LIC"
-            || pn == "LIG"
-            || pn == "GEI"
-            || pn == "GAI"
-            || pn == "FAP"
-            || pn == "WTF"
-            || pn == "PRN"
-            || pn == "PUS"
-            || pn == "TIT"
-            || pn == "PIS"
-            || pn == "KYS"
-            || pn == "SXX"
-            || pn == "POO"
-            || pn == "ANL"
-            || pn == "ORL"
-            || pn == "MFF"
-            || pn == "MLF"
-            || pn == "SFU"
-            || pn == "HUJ"
-            || pn == "CYC"
-            || pn == "SEX"
-           )
-        {
-            badname.SetActive(true);
-        }
-        else if(pn.Length != 3)
+        if(pn.Length != 3)
         {
             shortname.SetActive(true);
         }
@@ -134,16 +84,16 @@ public class addscore : MonoBehaviour
             || pn.Contains(".")
             || pn.Contains("?")
             || pn.Contains("/")
-            || pn.Contains("¹")
-            || pn.Contains("æ")
-            || pn.Contains("¿")
-            || pn.Contains("œ")
-            || pn.Contains("€")
-            || pn.Contains("ó")
-            || pn.Contains("ê")
-            || pn.Contains("³")
-            || pn.Contains("ñ")
-            || pn.Contains("Ÿ")
+            || pn.Contains("Â¹")
+            || pn.Contains("Ã¦")
+            || pn.Contains("Â¿")
+            || pn.Contains("Å“")
+            || pn.Contains("â‚¬")
+            || pn.Contains("Ã³")
+            || pn.Contains("Ãª")
+            || pn.Contains("Â³")
+            || pn.Contains("Ã±")
+            || pn.Contains("Å¸")
             || pn.Contains("\""))
         {
             letters.SetActive(true);
