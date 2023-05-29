@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
-    public float PlayerSpeed = 5; //predkosc gracza
-    public Rigidbody2D Player; //komponent do poruszania sie
-    public bool alive; //sprawdza czy gracz jest martwy czy nie-blokuje ruch i strzelanie po smierci
+    public float PlayerSpeed = 5; 
+    public Rigidbody2D Player; 
+    public bool alive; 
 
     [SerializeField]
-    private GameObject bullet; //pole pobierajace pocisk
+    private GameObject bullet; 
 
     [SerializeField]
-    private Transform bullet_spawn; //pole w grze z ktorego wystrzeliwany jest pocisk
+    private Transform bullet_spawn; 
     
-    public float attack_timer = 0.5f; //przerwa, jaka musi odczekac gracz pomiedzy strzalami
+    public float attack_timer = 0.5f; 
     public float currentat;
     private bool Attacking; //
     [SerializeField]
-    public int playerHealth; //ilosc zdrowia gracza
+    public int playerHealth; 
     // Start is called before the first frame update
     void Start()
     {
-        alive = true; //ustawiamy stan gracza jako 'zywy'
+        alive = true; 
 
-        Player = GetComponent<Rigidbody2D>(); //pobranie z gracza komponentu rigidbody
+        Player = GetComponent<Rigidbody2D>(); 
 
         currentat = attack_timer; 
     }
@@ -34,11 +34,11 @@ public class Player_movement : MonoBehaviour
     {
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
-        if (playerHealth <= 0) //jezeli zycie gracza spadnie ponizej 0, status zostanie zmieniony na 'martwy'
+        if (playerHealth <= 0) 
         {
-            alive = false; //nwm czy to tak bylo, usun jak cos
+            alive = false; 
         }
-        if(alive==true) //tak dlugo jak gracz jest zywy, moze poruszac sie i strzelac
+        if(alive==true) 
         {
         transform.position += new Vector3(moveX, 0, 0) * Time.deltaTime * PlayerSpeed;
         transform.position += new Vector3(0, moveY, 0) * Time.deltaTime * PlayerSpeed;
