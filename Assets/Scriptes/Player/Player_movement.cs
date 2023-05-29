@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
+    //Większość kodu w projekcie została napisana dosyć długi czas temu- od tamtego czasu zdobyłam zdecydowanie więcej doświadczenia, między innymi podczas praktyk
     public float PlayerSpeed = 5; 
     public Rigidbody2D Player; 
     public bool alive; 
